@@ -1,0 +1,19 @@
+.header {
+  background-color: $color-primary;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.4),
+      rgba($color-primary, 0.4)
+    ),
+    url(../img/hero-1.jpg);
+  background-position: 10%;
+  background-size: cover;
+
+  padding: 6rem 2rem 2rem 2rem;
+  height: 70vh;
+
+  display: grid;
+  grid-template-rows: 1fr repeat(2, minmax(6rem, min-content));
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}

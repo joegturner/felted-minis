@@ -1,0 +1,100 @@
+.howto {
+  background-color: rgba($color-primary, 0.7);
+  height: calc(100vh - 4rem);
+  padding: 5rem 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10vw, max-content));
+  grid-template-rows: min-content repeat(5, minmax(1fr, min-content));
+  justify-items: center;
+  align-items: center;
+
+  & > h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-self: center;
+  }
+
+  &__text-1,
+  &__text-2,
+  &__text-3 {
+    font-size: 1.8rem;
+    color: $color-grey-light-1;
+  }
+
+  &__img-1,
+  &__img-3 {
+    width: 20rem;
+    height: 100%;
+    display: block;
+  }
+
+  &__icon-1,
+  &__icon-2,
+  &__icon-3 {
+    width: 10rem;
+    fill: $color-grey-light-1;
+  }
+
+  &__box-1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 900px) {
+      grid-column: 1 / 6;
+    }
+  }
+  &__icon-1 {
+    width: 10rem;
+    height: 10rem;
+    transform: rotateY(180deg) rotate(110deg);
+
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    margin-right: -5rem;
+  }
+  &__box-2 {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 900px) {
+      grid-column: 1 / 6;
+      padding: 3rem;
+    }
+  }
+
+  &__icon-2 {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+  }
+
+  &__icon-3 {
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(120deg);
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    justify-self: start;
+    margin-left: -5rem;
+  }
+
+  &__box-3 {
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+
+    display: flex;
+    align-items: center;
+    margin-top: -5rem;
+
+    @media only screen and (max-width: 900px) {
+      grid-column: 1 / 6;
+    }
+  }
+}
