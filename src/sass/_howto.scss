@@ -1,6 +1,6 @@
 .howto {
   background-color: rgba($color-primary, 0.7);
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
   padding: 5rem 2rem;
 
   display: grid;
@@ -42,6 +42,7 @@
 
     display: flex;
     align-items: center;
+    margin-top: 1rem;
 
     @media only screen and (max-width: 900px) {
       grid-column: 1 / 6;
@@ -83,6 +84,7 @@
     grid-column: 4 / 5;
     justify-self: start;
     margin-left: -5rem;
+    margin-top: -3rem;
   }
 
   &__box-3 {
@@ -91,7 +93,7 @@
 
     display: flex;
     align-items: center;
-    margin-top: -5rem;
+    margin-top: -2rem;
 
     @media only screen and (max-width: 900px) {
       grid-column: 1 / 6;
